@@ -8,7 +8,7 @@
 
 /* Body */
 body {
-    background-color: #f4f4f4;
+    background-color: #09f592;
     color: #333;
 }
 
@@ -19,9 +19,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 5px 40px;
     background: linear-gradient(to right, #ff7e5f, #feb47b, #ffdf85, #b3ffab); 
-    color: white;
+    color: rgb(0, 0, 0);
     position: sticky;
     top: 0;
     width: 100%;
@@ -252,11 +252,74 @@ section {
     }
 }
 
+
 /* Contact Section */
 .contact-section {
-    background: #2e8b57;
+    background: #2E7D32; /* Dark Green */
     color: white;
-    padding: 40px 20px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.contact-section a {
+    color: #FFEB3B; /* Yellow */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    color: #FFC107; /* Darker Yellow */
+}
+
+.social-links {
+    margin: 5px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: #FFC107; /* Yellow */
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #FFA000; /* Darker Yellow */
 }
 
 /* Weather Section */
@@ -304,6 +367,7 @@ section {
     100% { transform: rotate(360deg); }
 }
 
+
 /* Footer */
 footer {
     background-color: #222;
@@ -311,4 +375,4 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 14px;
-}   
+}
